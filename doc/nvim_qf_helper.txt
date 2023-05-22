@@ -1,0 +1,50 @@
+*nvim_qf_helper.txt*	a summary
+
+A help plugin for neovim quickfix in Lua.
+
+==============================================================================
+CONTENTS							*nvim_qf_helper*
+
+INTRODUCTION					|nvim_qf_helper-introduction|
+USAGE						|nvim_qf_helper-usage|
+INTERFACE					|nvim_qf_helper-interface|
+  FUNCTIONS					|nvim_qf_helper-functions|
+TODO						|nvim_qf_helper-todo|
+CHANGELOG					|nvim_qf_helper-changelog|
+
+==============================================================================
+INTRODUCTION					*nvim_qf_helper-introduction*
+
+'nvim_qf_helper' is a help plugin for neovim quickfix in Lua.
+
+Latest version:
+https://github.com/marsh31/nvim-qf-helper
+
+==============================================================================
+USAGE						*nvim_qf_helper-usage*
+>lua
+require("nvim_qf_helper").setup()
+<
+
+==============================================================================
+INTERFACE					*nvim_qf_helper-interface*
+
+------------------------------------------------------------------------------
+FUNCTIONS					*nvim_qf_helper-functions*
+
+Open new buffer for cursor line file.
+>lua
+lua require("nvim_qf_helper.open").open("vsplit")
+lua require("nvim_qf_helper.open").open("split")
+<
+
+==============================================================================
+TODO						*nvim_qf_helper-todo*
+
+- [ ] Control new window position when open it.
+
+==============================================================================
+CHANGELOG					*nvim_qf_helper-changelog*
+
+
+vim:tw=78:ts=8:ft=help:norl:noet:fen:
